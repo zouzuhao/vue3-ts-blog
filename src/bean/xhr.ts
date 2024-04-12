@@ -36,6 +36,13 @@ export interface LoginModel extends PlainObject {
     password: string;
     captcha: string;
 }
+export interface QueryWxMsgType extends PlainObject {
+    type: number[];
+}
+
+export interface QueryWeekMsgType extends PlainObject {
+    months: number;
+}
 
 export interface UpdateArticlePrivateModel extends PlainObject {
     id: number;

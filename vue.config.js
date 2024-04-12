@@ -18,12 +18,13 @@ module.exports = {
         open: true,
         proxy: {
             "/api": {
-                // target: "http://47.120.19.249:8002",
+                // target: "http://47.120.19.249:8001",
+                // target: "http://localhost:3000",
                 target: "http://127.0.0.1:8002",
                 changeOrigin: true,
-                // pathRewrite: {
-                //     "^/api": "",
-                // },
+                pathRewrite: {
+                    "^/api": "",
+                },
             },
         },
     },

@@ -118,6 +118,16 @@ const routes: Array<RouteRecordRaw> = [
             title: "ChatGpt AI对话",
         },
     },
+    // echars 数据分析
+    {
+        path: "/aboutyou",
+        name: "DataAnalysis",
+        component: () => import(/* webpackChunkName: "chatgpt" */ "@/views/dataanalysis/index.vue"),
+        meta: {
+            auth: false,
+            title: "数据分析",
+        },
+    },
     backendRoute,
     NOT_FOUND_ROUTE,
     FALLBACK_ROUTE,
